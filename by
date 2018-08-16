@@ -1,0 +1,4 @@
+rm a.out
+ifort  ~/NRF90/nrtype.f90 ~/NRF90/nrutil.f90 ~/NRF90/nr.f90 ~/NRF90/covsrt.f90 ~/NRF90/gaussj.f90 ~/NRF90/mrqmin.f90 ~/NRF90/ludcmp.f90 ~/NRF90/lubksb.f90 ~/NRF90/fmin.f90 ~/NRF90/lnsrch.f90 global_para.f90 jac.f90 ~/NRF90/newt.f90 its.f90 in.f90 random.f90 cf.f90 SCMC.f90 main.f90 -cpp -DSLV=3 -O3  -axP
+rm *.mod
+./a.out

@@ -1,0 +1,15 @@
+Single-chain MC simulations
+---------- Running control
+0					! Control value (cont)
+''					! Confingure file to be read in when cont=1 or 2
+---------- Running information
+5000500				! Total number of MCS (Nstep)
+500					! Number of MCS for equilibration (Neq)
+20	              	! Interval (# of MCS) to sample (Nout)
+1.0d0                                  ! Fraction of hopping trial moves
+-10					! Random number seed (idum)
+---------- Polymer information
+3					! Number of segments on the chain (N)
+2					! Number of bonded potentials (m)
+0.1d0				! Bin size used to discretize the r-space in units of Re,0 (dltR) 
+25					! Number of bins (nRb-1)
