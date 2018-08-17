@@ -6,12 +6,7 @@
     write(22,*) 'SCMC Simulation ', its
 	write(22,12) '                   vb0:', (vb0(i),i=1,m)
 
-# if SLV == 3	
-	if (its > 1)  then
-		write(22,13) (covar(i,i), i=1,m)
-		write(22,14) (abs(dRe2(i)), i=1,N-1)
-	end if
-# endif	
+
 	close(22)	! Make the resfn accessible for the subroutine MC below
 	
 	call MC

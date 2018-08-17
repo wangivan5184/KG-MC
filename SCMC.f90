@@ -46,6 +46,16 @@ CONTAINS
 
     real t0
 
+!CHARACTER*8 btime
+!CHARACTER*9 bday
+
+
+!call time (btime)
+!call date (bday)
+!open (11, file=resfn, access='append')
+!write(11,*) 'Begin Time : ', bday, ' ', btime
+!write(11,*)
+
 !********** Generate Initial Configuration **********
 
     if (cont == 0) then         ! Randomly generate the initial configuration
